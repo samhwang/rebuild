@@ -22,4 +22,23 @@ describe('SEO Rendering', () => {
     const tree = render(SEOComponent);
     expect(tree).toMatchSnapshot();
   });
+
+  it('Should render without a description', () => {
+    const data: SEOProps = {
+      title: 'Test Render',
+      defaultFallback: {
+        title: 'Default Title',
+        description: 'Default Description',
+      },
+    };
+    const SEOComponent = (
+      <SEO
+        title={data.title}
+        description={data.description}
+        defaultFallback={data.defaultFallback}
+      />
+    );
+    const tree = render(SEOComponent);
+    expect(tree).toMatchSnapshot();
+  });
 });
