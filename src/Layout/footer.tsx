@@ -1,3 +1,4 @@
+import { Footer as MantineFooter, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -8,15 +9,15 @@ export default function Footer() {
   const ViteLink = <Link to="https://www.vitejs.dev/">Vite.</Link>;
 
   return (
-    <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
-      <p>
+    <MantineFooter height={60} p="md">
+      <Text>
         {`© ${new Date().getFullYear()} `}
         {GitHubLink}
         {`. Hosted on `}
         {GitHubPages}
         {`. Built with `}
         {ViteLink}
-      </p>
-    </section>
+      </Text>
+    </MantineFooter>
   );
 }
