@@ -5,6 +5,7 @@ specifiers:
   '@emotion/react': ^11.9.3
   '@mantine/core': ^5.0.0
   '@mantine/hooks': ^5.0.0
+  '@tabler/icons': ^1.78.1
   '@testing-library/dom': ^8.16.0
   '@testing-library/jest-dom': ^5.16.4
   '@testing-library/react': ^13.3.0
@@ -51,6 +52,7 @@ dependencies:
   '@emotion/react': 11.9.3_szkdlbnthht4v3jvm76fn7u6na
   '@mantine/core': 5.0.0_of3avfhfsphj3pj23xp4l6lqty
   '@mantine/hooks': 5.0.0_react@18.2.0
+  '@tabler/icons': 1.78.1_biqbaboplfbrettd7655fr4n2y
   devicons: 1.8.0
   react: 18.2.0
   react-devicons: 2.14.0
@@ -790,6 +792,21 @@ packages:
   /@sinclair/typebox/0.24.21:
     resolution: {integrity: sha512-II2SIjvxBVJmrGkkZYza/BqNjwx3PWROIA8CZ0/Hn7LV0Mv0CVpZxoyHGBVsQqfFLMv9DmArIeRHTwo76bE6oA==}
     dev: true
+
+  /@tabler/icons/1.78.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-QT/94Hufvzn4PxsEyN9NTh96XmNaGGgMh7sKcBZ2216pE9B+Ala98KpdNwTKKBlEvRvHw9y14zW4qFYzxGOhZw==}
+    peerDependencies:
+      react: ^16.x || 17.x || 18.x
+      react-dom: ^16.x || 17.x || 18.x
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@testing-library/dom/8.16.0:
     resolution: {integrity: sha512-uxF4zmnLHHDlmW4l+0WDjcgLVwCvH+OVLpD8Dfp+Bjfz85prwxWGbwXgJdLtkgjD0qfOzkJF9SmA6YZPsMYX4w==}

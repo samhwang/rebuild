@@ -6,14 +6,14 @@ exports[`Header > Should be hidden when pass opened false 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="mantine-Header-root mantine-MediaQuery-media mantine-1e144hv"
+        class="mantine-Header-root mantine-1vyozv6"
       >
         <div
           style="display: flex; align-items: center; height: 100%;"
         >
           <button
             aria-label="BurgerButton"
-            class="mantine-UnstyledButton-root mantine-Burger-root mantine-s1uxp1"
+            class="mantine-UnstyledButton-root mantine-Burger-root mantine-MediaQuery-media mantine-1gusoy8"
             type="button"
           >
             <div
@@ -31,14 +31,14 @@ exports[`Header > Should be hidden when pass opened false 1`] = `
   </body>,
   "container": <div>
     <header
-      class="mantine-Header-root mantine-MediaQuery-media mantine-1e144hv"
+      class="mantine-Header-root mantine-1vyozv6"
     >
       <div
         style="display: flex; align-items: center; height: 100%;"
       >
         <button
           aria-label="BurgerButton"
-          class="mantine-UnstyledButton-root mantine-Burger-root mantine-s1uxp1"
+          class="mantine-UnstyledButton-root mantine-Burger-root mantine-MediaQuery-media mantine-1gusoy8"
           type="button"
         >
           <div
@@ -113,14 +113,14 @@ exports[`Header > Should render without crashing and match snapshot 1`] = `
   "baseElement": <body>
     <div>
       <header
-        class="mantine-Header-root mantine-MediaQuery-media mantine-1e144hv"
+        class="mantine-Header-root mantine-1vyozv6"
       >
         <div
           style="display: flex; align-items: center; height: 100%;"
         >
           <button
             aria-label="BurgerButton"
-            class="mantine-UnstyledButton-root mantine-Burger-root mantine-s1uxp1"
+            class="mantine-UnstyledButton-root mantine-Burger-root mantine-MediaQuery-media mantine-1gusoy8"
             type="button"
           >
             <div
@@ -139,14 +139,14 @@ exports[`Header > Should render without crashing and match snapshot 1`] = `
   </body>,
   "container": <div>
     <header
-      class="mantine-Header-root mantine-MediaQuery-media mantine-1e144hv"
+      class="mantine-Header-root mantine-1vyozv6"
     >
       <div
         style="display: flex; align-items: center; height: 100%;"
       >
         <button
           aria-label="BurgerButton"
-          class="mantine-UnstyledButton-root mantine-Burger-root mantine-s1uxp1"
+          class="mantine-UnstyledButton-root mantine-Burger-root mantine-MediaQuery-media mantine-1gusoy8"
           type="button"
         >
           <div

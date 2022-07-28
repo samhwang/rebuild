@@ -1,5 +1,10 @@
 import { ReactNode } from 'react';
-import { AppShell, MantineProvider } from '@mantine/core';
+import {
+  AppShell,
+  MantineProvider,
+  ColorSchemeProvider,
+  ColorScheme,
+} from '@mantine/core';
 import { useToggle } from '@mantine/hooks';
 import SEO from './seo';
 import Header from './header';
@@ -22,22 +27,40 @@ function Layout({ children, title, description }: LayoutProps) {
   };
   const [opened, toggleOpened] = useToggle([false, true]);
 
+  const [colorScheme, setColorScheme] = useToggle<ColorScheme>([
+    'light',
+    'dark',
+  ]);
+  const toggleColorScheme = (value?: ColorScheme) => {
+    if (value) {
+      setColorScheme(value);
+    }
+
+    const nextColor = colorScheme === 'dark' ? 'light' : 'dark';
+    setColorScheme(nextColor);
+  };
+
   return (
-    <MantineProvider withNormalizeCSS withGlobalStyles>
-      <SEO
-        title={title}
-        description={description}
-        defaultFallback={defaultFallback}
-      />
-      <AppShell
-        navbarOffsetBreakpoint="sm"
-        navbar={<Sidebar hidden={!opened} />}
-        header={<Header opened={opened} toggleOpened={toggleOpened} />}
-        footer={<Footer />}
-      >
-        <div>{children}</div>
-      </AppShell>
-    </MantineProvider>
+    <ColorSchemeProvider
+      colorScheme={colorScheme}
+      toggleColorScheme={toggleColorScheme}
+    >
+      <MantineProvider withNormalizeCSS withGlobalStyles>
+        <SEO
+          title={title}
+          description={description}
+          defaultFallback={defaultFallback}
+        />
+        <AppShell
+          navbarOffsetBreakpoint="sm"
+          navbar={<Sidebar hidden={!opened} />}
+          header={<Header opened={opened} toggleOpened={toggleOpened} />}
+          footer={<Footer />}
+        >
+          <div>{children}</div>
+        </AppShell>
+      </MantineProvider>
+    </ColorSchemeProvider>
   );
 }
 

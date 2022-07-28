@@ -14,9 +14,9 @@ interface HeaderProps {
 export default function Header({ opened, toggleOpened }: HeaderProps) {
   const theme = useMantineTheme();
   return (
-    <MediaQuery largerThan="sm" styles={{ display: 'none', height: '0px' }}>
-      <MantineHeader height={70} p="md">
-        <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+    <MantineHeader height={70} p="md">
+      <div style={{ display: 'flex', alignItems: 'center', height: '100%' }}>
+        <MediaQuery largerThan="sm" styles={{ display: 'none' }}>
           <Burger
             opened={opened}
             onClick={() => toggleOpened()}
@@ -25,9 +25,9 @@ export default function Header({ opened, toggleOpened }: HeaderProps) {
             mr="xl"
             aria-label="BurgerButton"
           />
-          <Text>Header Text</Text>
-        </div>
-      </MantineHeader>
-    </MediaQuery>
+        </MediaQuery>
+        <Text>Header Text</Text>
+      </div>
+    </MantineHeader>
   );
 }
